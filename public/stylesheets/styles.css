@@ -260,10 +260,10 @@ width:740px;
 /* COLUMNAS */
 
 /* COLUMNA 1 */
-#col1 {width: 184px; float:left; height:400px; padding:5px 15px 0 15px; background:#E6E7D5;}
+#col1 {width: 184px; float:left; height:600px; padding:5px 15px 0 15px; background:#E6E7D5;}
 
 /* COLUMNA 2 */
-#col2 {width:170px;float:right; background:#E6E7D5;}
+#col2 {width:170px;float:right; background:#E6E7D5; height:600px;}
 #col2 p{font-size:0.8em; line-height:100%;}
 #col2 .col2_box {border-bottom:1px dashed #BDBFB2; padding-bottom:8px; width:90%;}
  
