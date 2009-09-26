@@ -49,7 +49,8 @@ class HomeController < ApplicationController
   end
   
   def promotions
-   @promotions = Promotion.all
+   @promotion = Promotion.find(params[:id])
+   @promocion_complejo = @complejo.promotions
   end
 
 end
