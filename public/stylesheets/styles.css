@@ -272,6 +272,10 @@ width:740px;
 #col1 h1 {font-size:1.4em; color:#000000; font-family:Georgia, "Times New Roman", Times, serif, "Trebuchet MS"; font-weight:normal; letter-spacing:-0.06em; margin-bottom:10px; margin-top:10px;} 
 #col2 h1 {font-size:1.3em; color:#6E6F68; font-family:Georgia, "Times New Roman", Times, serif, "Trebuchet MS"; font-weight:normal; letter-spacing:-0.06em; margin-bottom:5px; margin-top:10px; } 
 
+/*MIOS------------------------------------------------------------*/
+.centrar-imagen {
+text-align: center;
+}
 
 /* Footer */
 
