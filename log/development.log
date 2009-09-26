@@ -34687,3 +34687,51 @@ ActionController::RoutingError (No route matches "/images/pi.jpg" with {:method=
   /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromotionsController#index (for 127.0.0.1 at 2009-09-26 16:20:32) [GET]
+  [4;36;1mPromotion Load (1.0ms)[0m   [0;1mSELECT * FROM `promotions` [0m
+Rendering template within layouts/promotions
+Rendering promotions/index
+  [4;35;1mPromotion Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `promotions`[0m
+Completed in 817ms (View: 748, DB: 4) | 200 OK [http://127.0.0.1/promotions]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromotionsController#new (for 127.0.0.1 at 2009-09-26 16:20:37) [GET]
+  [4;36;1mPromotion Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `promotions`[0m
+Rendering template within layouts/promotions
+Rendering promotions/new
+Completed in 72ms (View: 55, DB: 3) | 200 OK [http://127.0.0.1/promotions/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromotionsController#create (for 127.0.0.1 at 2009-09-26 16:20:48) [POST]
+  Parameters: {"commit"=>"Create", "promotion"=>{"photo"=>#<File:/tmp/RackMultipart20090926-15311-2qe7n1-0>, "nombre"=>"a", "inicio(1i)"=>"2009", "descripcion"=>"aa", "caduca(1i)"=>"2009", "inicio(2i)"=>"9", "caduca(2i)"=>"9", "inicio(3i)"=>"26", "caduca(3i)"=>"26", "inicio(4i)"=>"19", "caduca(4i)"=>"19", "inicio(5i)"=>"20", "estado"=>"0", "caduca(5i)"=>"20"}, "authenticity_token"=>"6Zqj/wLKAgFb3NBxzFPCg++Yd8czKJDaNZe247bBDjg="}
+  [4;35;1mPromotion Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `promotions`[0m
+  [4;36;1mSQL (13.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPromotion Create (110.8ms)[0m   [0mINSERT INTO `promotions` (`created_at`, `photo_file_size`, `nombre`, `updated_at`, `photo_file_name`, `caduca`, `descripcion`, `photo_content_type`, `inicio`, `estado`) VALUES('2009-09-26 19:20:49', 72187, 'a', '2009-09-26 19:20:49', '1.jpg', '2009-09-26 19:20:00', 'aa', 'image/jpeg', '2009-09-26 19:20:00', 0)[0m
+[paperclip] Saving attachments.
+[paperclip] saving /home/javier/rails_app/quillahue_javier/public/system/photos/5/small/1.jpg
+[paperclip] saving /home/javier/rails_app/quillahue_javier/public/system/photos/5/original/1.jpg
+[paperclip] saving /home/javier/rails_app/quillahue_javier/public/system/photos/5/medium/1.jpg
+[paperclip] saving /home/javier/rails_app/quillahue_javier/public/system/photos/5/large/1.jpg
+[paperclip] saving /home/javier/rails_app/quillahue_javier/public/system/photos/5/thumb/1.jpg
+  [4;36;1mSQL (44.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/promotions/5
+Completed in 2058ms (DB: 172) | 302 Found [http://127.0.0.1/promotions]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PromotionsController#show (for 127.0.0.1 at 2009-09-26 16:20:50) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mPromotion Columns (14.4ms)[0m   [0mSHOW FIELDS FROM `promotions`[0m
+  [4;36;1mPromotion Load (31.6ms)[0m   [0;1mSELECT * FROM `promotions` WHERE (`promotions`.`id` = 5) [0m
+Rendering template within layouts/promotions
+Rendering promotions/show
+Completed in 97ms (View: 35, DB: 46) | 200 OK [http://127.0.0.1/promotions/5]
