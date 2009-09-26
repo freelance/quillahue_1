@@ -1,0 +1,36 @@
+<p>
+  <b>Nombre:</b>
+  <%=h @promotion.nombre %>
+</p>
+
+<p>
+  <b>Inicio:</b>
+  <%=h @promotion.inicio %>
+</p>
+
+<p>
+  <b>Caduca:</b>
+  <%=h @promotion.caduca %>
+</p>
+
+<p>
+  <b>Estado:</b>
+  <%=h @promotion.estado %>
+</p>
+
+<p>
+  <b>Descripcion:</b>
+  <%=h @promotion.descripcion %>
+</p>
+
+
+
+<% if @promotion.photo.exists? then %>
+<p>Small:<%= image_tag @promotion.photo.url(:small) %></p>
+<p>Medium:<%= image_tag @promotion.photo.url(:medium) %></p>
+<% else %>
+<p> There are no photo's attached, upload one. </p>
+<% end %>
+
+<%= link_to 'Edit', edit_promotion_path(@promotion) %> |
+<%= link_to 'Back', promotions_path %>

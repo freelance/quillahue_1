@@ -1,0 +1,11 @@
+
+<div id="sidebar">
+    <h2>promotions</h2>
+       <% if !@promotion.blank? %>
+  <% for promotion in @promotions %>
+  <%= promotion.nombre %>
+  <% end %>
+  <% else %>
+  No informations.
+  <% end %>
+

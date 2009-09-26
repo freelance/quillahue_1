@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :promotions
+
   map.resources :ubicacions
 
   map.resources :contactos

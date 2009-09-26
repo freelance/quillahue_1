@@ -2,7 +2,21 @@
 <%= render :partial => 'menu_servicos' %>
 
 Cipres
+<!-- wrapper element for the large image --> 
+<div id="image_wrap"> 
+ 
+    <!-- Initially the image is a simple 1x1 pixel transparent GIF --> 
+    <img src="http://static.flowplayer.org/tools/img/blank.gif" width="500" height="375" /> 
+ 
+</div>
+// in the above example replace the url assignment with this line 
+var url = $(this).attr("alt");
+
+
+
 <div class="centrar-imagen"> <img src="/images/mpa.jpg"></div>
+
+
 
 </div>
 

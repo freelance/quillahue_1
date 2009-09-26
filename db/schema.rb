@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090915134733) do
+ActiveRecord::Schema.define(:version => 20090926061544) do
 
   create_table "cabanas", :force => true do |t|
     t.string   "nombre"
@@ -56,6 +56,19 @@ ActiveRecord::Schema.define(:version => 20090915134733) do
     t.integer  "personas"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "promotions", :force => true do |t|
+    t.string   "nombre"
+    t.datetime "inicio"
+    t.datetime "caduca"
+    t.boolean  "estado"
+    t.text     "descripcion"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
   end
 
   create_table "servicios", :force => true do |t|

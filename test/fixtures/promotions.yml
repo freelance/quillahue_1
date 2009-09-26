@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nombre: MyString
+  inicio: 2009-09-26 03:11:42
+  caduca: 2009-09-26 03:11:42
+  estado: false
+  descripcion: MyText
+
+two:
+  nombre: MyString
+  inicio: 2009-09-26 03:11:42
+  caduca: 2009-09-26 03:11:42
+  estado: false
+  descripcion: MyText

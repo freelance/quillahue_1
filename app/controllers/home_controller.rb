@@ -47,5 +47,9 @@ class HomeController < ApplicationController
   def galerias
 
   end
+  
+  def promotions
+   @promotions = Promotion.all
+  end
 
 end

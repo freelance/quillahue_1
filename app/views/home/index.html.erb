@@ -4,13 +4,19 @@
 	<div id ="col1">
 	<h2>Promociones </h2>
 	<div class="centrar-imagen">  <img src="/images/banner1.jpg"></div>
-  	<% if !@ubicacions.blank? %>
-  	<% for ubicacion in @ubicacions %>
-  	<%= ubicacion.direccion %>
-  	<% end %>
-  	<% else %>
-  	No informations.
-  	<% end %>
+   	  	
+	    <h2>Informacion</h2>
+    
+  <% if !@promotions.blank? %>
+  <% for promotion in @promotions %>
+  <%= promotion.descripcion %>
+  <% end %>
+  <% else %>
+  No informations.
+  <% end %>
+
+
+	
 	</div>
 
 <p style="color: green"><%= flash[:notice] %></p>
@@ -18,18 +24,18 @@
 
    <div class="centrar-imagen">  <img src="/images/home.jpg"></div>
 
-En Bariloche..Patagonia Argentina, cabañas de 2 a 7 personas, ubicadas a 100mts.del Lago Nahuel Huapi, en el km4 de la hermosa ruta al Llao Llao, a 3 minutos del Centro Cívico y a 10 del Cerro Catedral.
+<h3>En Bariloche..Patagonia Argentina, cabañas de 2 a 7 personas, ubicadas a 100mts.del Lago Nahuel Huapi, en el km4 de la hermosa ruta al Llao Llao, a 3 minutos del Centro Cívico y a 10 del Cerro Catedral.
 Toda la calidez de un “Lugar de Amigos” para descansar y disfrutar en familia de la maravillosa naturaleza que nos rodea.
 Los esperamos en Cabaña Quillahue Bariloche “Lugar de Amigos”
 Quillahue – Lugar de Amigos – Tronador 4101 – km.4 Melipal
 Tel (54) 02944-525574 – 15659302 – 15676828
 quillahue@gmail.com - www.cabañaquillahue.com.ar - www.quillahue.com
-San Carlos de Bariloche – Pcia. De Río Negro – Patagonia Argentina
+San Carlos de Bariloche – Pcia. De Río Negro – Patagonia Argentina </h3>
 </div>
 
 
 <div id ="col2">
-<h1>Reservas online</h1>
+<h2>Reservas online</h2>
   <% if !@ubicacions.blank? %>
   <% for ubicacion in @ubicacions %>
   <%= ubicacion.direccion %>
@@ -37,6 +43,8 @@ San Carlos de Bariloche – Pcia. De Río Negro – Patagonia Argentina
   <% else %>
   No informations.
   <% end %>
+<h1>Clima Actual</h1>
+  
 </div>
 
 

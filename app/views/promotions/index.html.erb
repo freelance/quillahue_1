@@ -1,0 +1,28 @@
+<h1>Listing promotions</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Inicio</th>
+    <th>Caduca</th>
+    <th>Estado</th>
+    <th>Descripcion</th>
+  </tr>
+
+<% @promotions.each do |promotion| %>
+  <tr>
+    <td><%=h promotion.nombre %></td>
+    <td><%=h promotion.inicio %></td>
+    <td><%=h promotion.caduca %></td>
+    <td><%=h promotion.estado %></td>
+    <td><%=h promotion.descripcion %></td>
+    <td><%= link_to 'Show', promotion %></td>
+    <td><%= link_to 'Edit', edit_promotion_path(promotion) %></td>
+    <td><%= link_to 'Destroy', promotion, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New promotion', new_promotion_path %>
