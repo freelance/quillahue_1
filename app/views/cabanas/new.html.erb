@@ -1,0 +1,23 @@
+<h1>New cabana</h1>
+
+<% form_for(@cabana) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </p>
+  <p>
+    <%= f.label :servicios %><br />
+    <%= f.text_field :servicios %>
+  </p>
+  <p>
+    <%= f.label :descripcion %><br />
+    <%= f.text_area :descripcion %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', cabanas_path %>

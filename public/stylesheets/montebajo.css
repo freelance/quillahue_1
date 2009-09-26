@@ -1,0 +1,8 @@
+h1 {
+  background-image: url(/resources/nuevo/titulos/montebajo.jpg);
+}
+
+#principal .generico h2 {
+  background: url(/resources/nuevo/cabeceras/montebajo.jpg) no-repeat center bottom;
+
+}

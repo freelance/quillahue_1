@@ -1,0 +1,30 @@
+<h1>Listing tarifas</h1>
+
+<table>
+  <tr>
+    <th>Precio per base</th>
+    <th>Precio cab base</th>
+    <th>Precio p dia</th>
+    <th>Precio p semana</th>
+    <th>Precio p fdslargo</th>
+    <th>Cabana</th>
+  </tr>
+
+<% @tarifas.each do |tarifas| %>
+  <tr>
+    <td><%=h tarifas.precio_per_base %></td>
+    <td><%=h tarifas.precio_cab_base %></td>
+    <td><%=h tarifas.precio_p_dia %></td>
+    <td><%=h tarifas.precio_p_semana %></td>
+    <td><%=h tarifas.precio_p_fdslargo %></td>
+    <td><%=h tarifas.cabana %></td>
+    <td><%= link_to 'Show', tarifas %></td>
+    <td><%= link_to 'Edit', edit_tarifas_path(tarifas) %></td>
+    <td><%= link_to 'Destroy', tarifas, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New tarifas', new_tarifas_path %>

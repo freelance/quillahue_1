@@ -1,0 +1,12 @@
+#cabecera, #secundaria, #pie, #banners {
+  display: none;
+}
+
+#principal {
+  width: 100%;
+  background: transparent;
+}
+
+h1 {
+  text-indent: 0;
+}

@@ -1,0 +1,11 @@
+@import url(listadoalojasna09.css);
+
+h1 {
+  background-image: url(/images/piscinatitulo.jpg);
+}
+#principal .generico h2 {
+  background-image: url(/resources/nuevo/sna/cabeceras/piscinacabe.jpg);
+
+}
+prueba{
+ background-image: url(/resources/nuevo/cabeceras/encarretera.jpg);}

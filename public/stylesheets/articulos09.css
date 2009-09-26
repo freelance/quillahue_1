@@ -1,0 +1,81 @@
+/* .generico p, .generico table, .generico li, div.pantalla p {*/
+.generico p, .generico li, div.pantalla p {
+
+	font-size: 0.8em;
+	margin-left:15px;
+}
+
+.generico table {
+	font-size: 1em;
+                clear:left;
+}
+
+
+.generico, div.pantalla p {
+	color: black;
+	text-align: justify;
+}
+
+.generico .imgLeft, div.pantalla p .imgLeft {
+	float: left; 
+	margin: 0.5em 0.5em 0.5em 0em;
+	border:none;
+}
+
+.generico .imgRight, div.pantalla p .imgRight {
+	float: right; 
+	margin: 0.5em 0em 0.5em 0.5em;
+	border:none;
+}
+
+.generico .imgCenter, div.pantalla p .imgCenter {
+	float: center;
+	margin: 0.5em 0em 0.5em 0.5em;
+	border:none;
+}
+
+.generico .imgMiddle, div.pantalla p .imgMiddle {
+	vertical-align: middle;
+	margin: 0.5em 0em 0.5em 0.5em;
+	border:none;
+}
+
+.generico .resaltado, div.pantalla p .resaltado {
+                color: #22397F;
+                font-weight:bold;
+                border-bottom: 1px dotted #999;
+}
+
+.generico .destacado, div.pantalla p .destacado {
+                color: red;
+                font-weight:bold;
+}
+
+
+div.pantalla h4 .imgLeft {
+	float: left; 
+	margin: 0.5em 0.5em 0.5em 0em;
+	border:none;
+}
+
+
+div.pantalla h4 .imgRight {
+	float: right; 
+	margin: 0.5em 0em 0.5em 0.5em;
+	border:none;
+}
+
+
+.pantalla {
+	font-size: .9em;
+}
+
+.pantalla ul li, .pantalla table {
+	font-size: 0.9em;
+}
+
+a.imprimir {
+float: right; 
+position:relative;
+margin: 3px 0 0 5px;
+}

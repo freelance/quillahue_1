@@ -1,0 +1,117 @@
+#cabecera {
+  height: 552px;
+}
+
+#imagenesCabecera {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  left: 2px;
+  width: 984px;
+  overflow: hidden;
+  height: 354px;
+}
+
+#imagenesCabecera li {
+  position: absolute;
+}
+
+#fondoNavegacion, #navegacion {
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+  width: 402px;
+  height: 38px;
+}
+
+#navegacion {
+  width: 325px;
+}
+
+#fondoNavegacion {
+  background: url(/resources/nuevo/sna/navegacion.png) no-repeat;
+  _background: url(/resources/nuevo/home/navegacion.gif) no-repeat;
+}
+
+#cajitas {
+  margin: 10px 0 9px 10px;
+  _margin: 5px 0 5px 10px;
+  line-height: 10px;
+  height: 10px;
+}
+
+#cajitas li {
+  float: left;
+  width: 10px;
+  height: 10px;
+  background: white;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+#cajitas li.activo {
+  background: #45ac16;
+}
+
+#play {
+  position: absolute;
+  right: 15px;
+  bottom: 18px;
+  width: 15px;
+  height: 13px;
+  background: url(/resources/nuevo/sna/play.png) no-repeat;
+  _background: url(/resources/nuevo/home/play.gif) no-repeat;
+  cursor: pointer;
+}
+
+#play.activo {
+  background: transparent;
+  cursor: default;
+}
+
+#progreso {
+  height: 5px;
+  background: #fff;
+  width: 305px;
+  padding: 0;
+  margin-left: 10px;
+}
+
+#progreso div {
+  height: 5px;
+  background: #45ac16;
+  margin: 0;
+}
+
+#textoImagen {
+  position: absolute;
+  right: 2px;
+  top: 218px;
+  z-index: 5;
+  background: url(/resources/nuevo/fondoMensajeCabecera.png) top no-repeat;
+  _background: url(/resources/nuevo/fondoMensajeCabecera.jpg) top no-repeat;
+  padding: 10px;
+  width: 101px;
+  height: 120px;
+  overflow: hidden;
+  color: #124ba6;
+  text-align: left;
+  font-size: 0.9em;
+}
+
+#textoImagen h3 {
+  color: #124ba6;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+#textoImagen a{
+  text-decoration: none;
+  margin-top: 1em;
+  position: absolute;
+  top: 107px;
+  right: 14px;
+  z-index: 2;
+  color: #124ba6;
+}

@@ -1,0 +1,45 @@
+<div id="contenedor">
+	
+<div id="centro">
+	<div id ="col1">
+	<h2>Informacion</h2>
+  	<% if !@ubicacions.blank? %>
+  	<% for ubicacion in @ubicacions %>
+  	<%= ubicacion.direccion %>
+  	<% end %>
+  	<% else %>
+  	No informations.
+  	<% end %>
+	</div>
+
+<p style="color: green"><%= flash[:notice] %></p>
+<h2>Bienvenidos a Quillahue</h2>
+
+En Bariloche..Patagonia Argentina, cabañas de 2 a 7 personas, ubicadas a 100mts.del Lago Nahuel Huapi, en el km4 de la hermosa ruta al Llao Llao, a 3 minutos del Centro Cívico y a 10 del Cerro Catedral.
+Toda la calidez de un “Lugar de Amigos” para descansar y disfrutar en familia de la maravillosa naturaleza que nos rodea.
+Los esperamos en Cabaña Quillahue Bariloche “Lugar de Amigos”
+Quillahue – Lugar de Amigos – Tronador 4101 – km.4 Melipal
+Tel (54) 02944-525574 – 15659302 – 15676828
+quillahue@gmail.com - www.cabañaquillahue.com.ar - www.quillahue.com
+San Carlos de Bariloche – Pcia. De Río Negro – Patagonia Argentina
+</div>
+
+
+<div id ="col2">
+<h1>Reservas online</h1>
+  <% if !@ubicacions.blank? %>
+  <% for ubicacion in @ubicacions %>
+  <%= ubicacion.direccion %>
+  <% end %>
+  <% else %>
+  No informations.
+  <% end %>
+</div>
+
+
+</div>
+</div>
+
+
+
+

@@ -1,0 +1,158 @@
+#ofertas {
+  list-style: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 25px;
+  top: 145px;
+  z-index: 4;
+  background: url(/resources/nuevo/fondoOferta.jpg) left top no-repeat;
+  text-align: center;
+}
+
+#ofertas h2 {
+  font-size: 2em;
+  margin-top: 0;
+  clear: both;
+}
+
+#ofertas li {
+  padding: 60px 10px 0 10px;
+  width: 92px;
+  height: 353px;
+  color: #fff;
+  display: none;
+}
+
+#ofertas li.primero {
+  display: block;
+}
+
+#ofertas li a {
+  position: absolute;
+  bottom: 15px;
+  width: 80px;
+  height: 34px;
+  /*margin-left: -38px;*/
+  line-height: 34px;
+  text-align: center;
+  background: url(/resources/nuevo/fondoOfertas.jpg) no-repeat;
+  text-decoration: none;
+  color: #fff;
+  right:16px;
+}
+
+#ofertas h2 {
+  text-align: center;
+  background: url(/resources/nuevo/separadorOferta.gif) bottom no-repeat;
+  padding-bottom: 0.5em;
+}
+
+#menuPrincipal {
+  z-index: 5;
+}
+
+/* Ofertas de abajo */
+
+#ofertasEnPestanas {
+  background: url(/resources/nuevo/fondoOfertasHome.jpg) bottom no-repeat;
+  padding-bottom: 25px;
+}
+
+#principal #ofertasEnPestanas h2 {
+  margin-left: 4px;
+  margin-top:10px;
+}
+
+#principal #ofertasEnPestanas h2 span {
+  padding-top: 3px;
+  height: 19px;
+}
+
+#principal #ofertasEnPestanas h2 ul {
+  background: url(/resources/nuevo/h2sombra.jpg) top no-repeat;
+  margin-left:-37px;
+  *margin-left:-38px;
+  padding-left:45px;
+  padding-top:2px;
+  position:absolute;
+  width:606px;
+}
+
+#principal #ofertasEnPestanas div ul {
+  margin:0 auto;
+  width:560px;
+  overflow: hidden;
+}
+
+#principal #ofertasEnPestanas div ul li {
+  clear: both;
+}
+
+#principal #ofertasEnPestanas div ul li h3 {
+  background-image: url(/resources/nuevo/h3corto.jpg);
+}
+
+#principal #ofertasEnPestanas div ul img {
+  position: absolute;
+  margin-top:21px;
+}
+
+#principal #ofertasEnPestanas div ul .fechas {
+  padding: 4px 0;
+}
+
+#principal #ofertasEnPestanas div ul .fechas, #principal #ofertasEnPestanas div ul table {
+  width: 560px;
+  border-collapse: collapse;
+  font-size: 0.85em;
+  text-align: right;
+}
+
+#principal #ofertasEnPestanas div ul table caption {
+  width: auto;
+  background: #8f969c;
+  text-align: right;
+  padding: 0 5px;
+  line-height: 1.5em;
+  height: 1.5em;
+  margin-top: 0;
+}
+
+#principal #ofertasEnPestanas div ul table th {
+  background: #b5b9bd;
+  font-weight: normal;
+  padding: 5px;
+  color: #565a5d;
+}
+
+#principal #ofertasEnPestanas div ul table td {
+  background: #dbdfe1;
+  color: #565a5d;
+  padding: 5px;
+  border-bottom: 0;
+}
+
+#principal #ofertasEnPestanas div ul table tr.par td {
+  background: #eceff2;
+}
+
+#principal #ofertasEnPestanas div ul table td.primera {
+/*  background: transparent !important;*/
+}
+
+#principal #ofertasEnPestanas caption a {
+  color: white;
+  text-decoration: none;
+}
+
+#principal #ofertasEnPestanas div ul tbody a {
+  color: red;
+  text-decoration: none;
+}
+
+#principal #ofertasEnPestanas h3 {
+  overflow: hidden;
+  margin-bottom: 0;
+}
+

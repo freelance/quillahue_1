@@ -1,0 +1,32 @@
+<h1>Listing complejos</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Pais</th>
+    <th>Provincia</th>
+    <th>Ciudad</th>
+    <th>Direccion</th>
+    <th>Telefono</th>
+    <th>Email</th>
+  </tr>
+
+<% @complejos.each do |complejo| %>
+  <tr>
+    <td><%=h complejo.nombre %></td>
+    <td><%=h complejo.pais %></td>
+    <td><%=h complejo.provincia %></td>
+    <td><%=h complejo.ciudad %></td>
+    <td><%=h complejo.direccion %></td>
+    <td><%=h complejo.telefono %></td>
+    <td><%=h complejo.email %></td>
+    <td><%= link_to 'Show', complejo %></td>
+    <td><%= link_to 'Edit', edit_complejo_path(complejo) %></td>
+    <td><%= link_to 'Destroy', complejo, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New complejo', new_complejo_path %>

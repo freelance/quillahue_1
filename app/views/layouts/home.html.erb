@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<%= stylesheet_link_tag 'styles' %>
+<%= javascript_include_tag 'jquery', 's3Slider', 'jquery.galleria'  %>
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<title><%= controller.action_name %></title>
+
+<style type="text/css" media="screen">
+#slider1 {
+  width: 960px; /* important to be same as image width */
+  height: 260px; /* important to be same as image height */
+  position: relative; /* important */
+  overflow: hidden; /* important */
+  background: #FFFFFF url(/images/bungalow.jpg) repeat-x;
+}
+
+#slider1Content {
+  width: 620px; /* important to be same as image width or wider */
+  position: relative;
+  top: 0;
+  margin-left: 0;
+}
+.slider1Image {
+  padding: 0px 214px;
+  float: left;
+  position: absolute;
+  display: none;
+}
+
+
+.slider1Image span {
+  position: absolute;
+  font: 10px/15px Arial, Helvetica, sans-serif;
+  padding: 10px 13px;
+  width: 564px;
+  background-color: #000;
+  filter: alpha(opacity=70);
+  -moz-opacity: 0.7;
+  -khtml-opacity: 0.7;
+  opacity: 0.7;
+  color: #fff;
+  display: none;
+}
+.clear {
+  clear: both;
+}
+.slider1Image span strong {
+  font-size: 14px;
+}
+.left {
+  top: 0;
+  left: 0;
+  width: 130px !important;
+  height: 275px;
+}
+.right {
+  right: 0;
+  bottom: 0;
+  width: 90px !important;
+  height: 275px;
+}
+
+
+ul { list-style-type: none;}
+
+</style>
+<!-- JavaScripts-->
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#slider1').s3Slider({
+    timeOut: 4000
+  });
+});
+</script>
+
+
+
+</head>
+<body>
+
+
+<div id="wrapper">
+  <div id="top">
+
+  <%= render :partial => '/layouts/ideomas' %>
+
+  <%= render :partial => '/layouts/home_menu' %>
+
+<div id="header">
+
+</div>
+
+<%= render :partial => '/layouts/sliders' %>
+
+<div id="page">
+
+<div id="mainarea">
+<%= yield %>
+</div>
+
+<div id="footer">
+  <h2>pie</h2>
+</div>
+
+</div>
+</body>
+</html>
+
+<script type="text/javascript">
+jQuery(function($) { $('ul.gallery').galleria(); });
+</script>

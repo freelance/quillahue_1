@@ -1,0 +1,255 @@
+#principal {
+  background: transparent;
+  width: 597px;
+  padding: 0;
+}
+
+#secundaria {
+  margin-left: 20px;
+  _margin-left: 10px;
+}
+
+
+#comoLlegar {
+  background:transparent url(/resources/nuevo/sna/llegar.png) no-repeat scroll center center;
+  _background:transparent url(/resources/nuevo/llegar.gif) no-repeat scroll center center;
+  height:38px;
+  left:558px;
+  position:absolute;
+  top:514px;
+  width:77px;
+  z-index:3000;
+}
+
+#comoLlegar a {
+  display: block;
+  text-indent:-500em;
+  width: 100%;
+  height: 100%;
+}
+
+/*#login {
+  background: url(/resources/nuevo/fondoLogin.jpg) no-repeat;
+  height: 99px;
+  width: 308px;
+  position: relative;
+  clear: both;
+}
+
+#login a {
+  color: #565a5d;
+  text-decoration: none;
+}
+
+#login input {
+  color: #b0b0b2;
+  border: 1px solid #bbb;
+  padding: 0 2px;
+}
+
+#usuario, #clave, #recordar, #alta, #enviarLogin {
+  position: absolute;
+}
+
+#usuario {
+  left: 20px;
+  top: 45px;
+}
+
+#clave {
+  top: 45px;
+  left: 140px;
+}
+
+#recordar {
+  left: 140px;
+  bottom: 30px;
+}
+
+#alta {
+  left: 20px;
+  bottom: 30px;
+}
+
+#login input#enviarLogin {
+  top: 45px;
+  right: 20px;
+  width: 54px;
+  height: 30px;
+  border: 0;
+  background: url(/resources/nuevo/fondoBotonLogin.jpg) no-repeat;
+  color: white;
+  cursor: pointer;
+}*/
+
+.pequena {
+  background: url(/resources/nuevo/sna/cajagrissna09.jpg) no-repeat;
+  width: 169px;
+  height: 261px;
+  position: relative;
+  float: left;
+}
+
+.pequena * {
+  position: absolute;
+}
+
+.pequena .imagen {
+  left: 8px;
+  top: 27px;
+  width: 185px;
+  height: 113px;
+}
+
+.pequena .imagen a {
+  position: static;
+  padding: 0;
+  background: 0;
+}
+
+.pequena p {
+  top: 145px;
+  padding: 0 15px;
+  left: 0;
+  height: 90px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.pequena a {
+  bottom: 25px;
+  right: 20px;
+  color: #76A120;
+  text-decoration: none;
+  font-weight: bold;
+  background: url(/resources/nuevo/sna/cuadradosenlacesna09.gif) left no-repeat;
+  padding-left: 67px;
+}
+
+.pequena.sintexto {
+  padding-top: 4px;
+  background: url(/resources/nuevo/sna/cajaverdesna09.jpg) no-repeat;
+  height: 140px;
+}
+
+.pequena.sintexto img {
+  left: 3px;
+  top: 1px;
+}
+
+.pequena.sintexto .iconito {
+  right: 32px;
+  top: -1px;
+display: none;
+}
+
+#principal .pequena h2 {
+  width: auto;
+}
+
+#principal h2 {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  line-height: 15px;
+}
+
+#fila3 {
+  clear: both;
+}
+
+#patrocinadores {
+  clear: left;
+  width: 577px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+
+#patrocinadores li {
+  float: left;
+}
+
+#banners {
+  width: 315px;
+  height: auto;
+  background: url(/resources/nuevo/fondoBanners2.jpg) repeat-y;
+  padding: 0 12px;
+}
+
+#banners a {
+  display:block;
+  float:left;
+  margin:21px 10px 15px;
+}
+
+#noticias h2 {
+  color: #6C6A6A;
+  background: url(/resources/nuevo/fondoTituloSecundario.jpg) top no-repeat;
+  height: 25px;
+  padding-top: 2px;
+  line-height: 23px;
+  padding-left: 17px;
+}
+
+#noticias {
+  background: url(/resources/nuevo/fondoNoticias.jpg) top no-repeat;
+  padding: 15px 20px;
+  width: 298px;
+  height: 150px;
+  color: #454948;
+  overflow: hidden;
+}
+
+#noticias ul {
+  list-style: none;
+}
+
+#noticias ul li {
+  margin: 1em 0;
+  text-align: left;
+  clear: left;
+}
+
+#noticias ul li img {
+  float: left;
+  width: 49px;
+  height: 36px;
+  border: 1px solid #76A020;
+}
+
+#noticias ul li .texto {
+  margin-left: 5px;
+  text-align: right;
+  float: left;
+  width: 240px;
+  margin-bottom: 1em;
+}
+
+#noticias a {
+  color: #76A020;
+  text-decoration: none;
+  font-weight: bold;
+  padding-left: 52px;
+  background: url(/resources/nuevo/sna/bolitasnoticiashomesna09.gif) left no-repeat;
+}
+
+/** Centro de Comercio **/
+
+#imagenCC {
+  background:transparent url(/resources/nuevo/caja_peq.jpg) no-repeat scroll 0 0;
+  clear:both;
+  height:99px;
+  position:relative;
+  width:308px;
+}
+
+.cajaAccionesCC {
+  font-size:0.85em;
+  padding: 8px 15px;
+}
+
+#imagenCC img {
+  margin-left:35px;
+  margin-top:5px;
+}

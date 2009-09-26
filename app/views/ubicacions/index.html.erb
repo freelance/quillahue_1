@@ -1,0 +1,30 @@
+<h1>Como llegar a  Cabaña Quillahue</h1>
+<IMG SRC="/images/mpas.jpg">
+
+
+<table>
+  <tr>
+    <th>Descripcion</th>
+    <th>Tel1</th>
+    <th>Cel</th>
+    <th>Email</th>
+    <th>Direccion</th>
+  </tr>
+
+<% @ubicacions.each do |ubicacion| %>
+  <tr>
+    <td><%=h ubicacion.descripcion %></td>
+    <td><%=h ubicacion.tel1 %></td>
+    <td><%=h ubicacion.cel %></td>
+    <td><%=h ubicacion.email %></td>
+    <td><%=h ubicacion.direccion %></td>
+    <td><%= link_to 'Show', ubicacion %></td>
+    <td><%= link_to 'Edit', edit_ubicacion_path(ubicacion) %></td>
+    <td><%= link_to 'Destroy', ubicacion, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New ubicacion', new_ubicacion_path %>

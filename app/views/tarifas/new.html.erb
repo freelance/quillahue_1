@@ -1,0 +1,35 @@
+<h1>New tarifas</h1>
+
+<% form_for(@tarifas) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :precio_per_base %><br />
+    <%= f.text_field :precio_per_base %>
+  </p>
+  <p>
+    <%= f.label :precio_cab_base %><br />
+    <%= f.text_field :precio_cab_base %>
+  </p>
+  <p>
+    <%= f.label :precio_p_dia %><br />
+    <%= f.text_field :precio_p_dia %>
+  </p>
+  <p>
+    <%= f.label :precio_p_semana %><br />
+    <%= f.text_field :precio_p_semana %>
+  </p>
+  <p>
+    <%= f.label :precio_p_fdslargo %><br />
+    <%= f.text_field :precio_p_fdslargo %>
+  </p>
+  <p>
+    <%= f.label :cabana %><br />
+    <%= f.text_field :cabana %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', tarifas_path %>

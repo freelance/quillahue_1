@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  apellido: MyString
+  nombre: MyString
+  procedencia: MyString
+  telefono: MyString
+  email: MyString
+  fecha_llegada: 2009-07-26 20:14:47
+  fecha_partida: 2009-07-26 20:14:47
+  personas: 1
+
+two:
+  apellido: MyString
+  nombre: MyString
+  procedencia: MyString
+  telefono: MyString
+  email: MyString
+  fecha_llegada: 2009-07-26 20:14:47
+  fecha_partida: 2009-07-26 20:14:47
+  personas: 1

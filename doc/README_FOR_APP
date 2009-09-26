@@ -1,0 +1,12 @@
+LAYOUTS/VIEWS
+1 - si usted crear um layout chamado application.html.erb en la pasta "layouts",
+ este template seras padrone para todos los controllers.
+
+2 - yo movi su index.html.rb para la pasta views/home,
+todos los arquivos de lo controller home, devem estar en la pasta views/home
+
+3  - usted no puede colocar mais de uno <%= yield %> en su html, necessitas apenas uno en lo layout principale.
+Las demas páginas no necessitam.
+
+4 - todas las paginas de home puedem estar solamente en lo controller home.
+

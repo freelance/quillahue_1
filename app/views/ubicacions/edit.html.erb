@@ -1,0 +1,32 @@
+<h1>Editing ubicacion</h1>
+
+<% form_for(@ubicacion) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :descripcion %><br />
+    <%= f.text_area :descripcion %>
+  </p>
+  <p>
+    <%= f.label :tel1 %><br />
+    <%= f.text_field :tel1 %>
+  </p>
+  <p>
+    <%= f.label :cel %><br />
+    <%= f.text_field :cel %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :direccion %><br />
+    <%= f.text_field :direccion %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @ubicacion %> |
+<%= link_to 'Back', ubicacions_path %>

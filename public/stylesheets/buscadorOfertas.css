@@ -1,0 +1,268 @@
+#principal .id2551 {
+  background: url(/resources/nuevo/buscador.jpg) repeat-y;
+  margin-left: -3px;
+}
+
+#principal .id2551 h2 {
+  margin-bottom: 0;
+  background: transparent;
+  line-height: 16px;
+  padding: 0 0 0 10px;
+  height: auto;
+}
+
+#principal .id2551 h2 ul {
+  list-style: none;
+  margin: 0;
+}
+
+#principal .id2551 form, #buscadorOfertas {
+  position: relative;
+  height:115px;
+}
+
+#principal .id2551 form select, #principal .id2551 form label, #principal .id2551 form input, #buscadorOfertas select, #buscadorOfertas label, #buscadorOfertas input {
+  font-size: 0.9em;
+}
+
+#principal .pestanas.cambiado .formulario, #principal .ultimo.formulario {
+  height: auto;
+}
+
+#principal .pestanas.cambiado {
+  background-repeat: no-repeat;
+}
+
+#principal .id2551 form div, #buscadorOfertas div {
+  position: absolute;
+}
+
+#principal .id2551 div.tipoHabitacion, #buscadorOfertas div.tipoHabitacion {
+  top: 7px;
+  left: 14px;
+}
+
+#principal .id2551 div.regimen, #buscadorOfertas div.regimen {
+  top: 7px;
+  left: 230px;
+}
+
+#principal .id2551 div.desde, #buscadorOfertas div.desde {
+  top: 68px;
+  left: 14px;
+}
+
+#principal .id2551 div.hasta, #buscadorOfertas div.hasta {
+  top: 68px;
+  left: 230px;
+}
+
+#principal .id2551 div.boton, #buscadorOfertas div.boton {
+  top: 9px;
+  right: 30px;
+}
+
+#resultados {
+  margin-top: 1em;
+/*  font-size:0.85em;*/
+}
+
+#resultados img {
+  border: 3px solid #105da1;
+  padding: 1px;
+}
+
+#resultados .par .imagen {
+  float: left;
+  width: 208px;
+}
+
+#resultados .par .datos {
+  margin-left: 215px;
+
+}
+
+#resultados .impar .imagen {
+  float: right;
+  width: 208px;
+}
+
+#resultados .impar .datos {
+  margin-right: 215px;
+}
+
+#principal .boton input {
+  background:transparent url(/resources/nuevo/fondoOfertas.gif) no-repeat;
+  border: 0;
+  color: white;
+  height: 36px;
+  padding-bottom: 7px;
+  *padding-bottom: 0;
+  width: 65px;
+  font-size: 1.05em !important;
+}
+
+#resultados h3 {
+  height: auto;
+  padding-bottom: 2px;
+  padding-right: 15px;
+}
+
+#ofertasEnPestanas h2 ul {
+  background: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+#resultados h2 {
+  margin-left: 4px;
+  margin-top:10px;
+}
+
+#resultados h2 span {
+  padding-top: 3px;
+  height: 19px;
+}
+
+#resultados h2 ul {
+  background: url(/resources/nuevo/h2sombra.jpg) top no-repeat;
+  margin-left:-37px;
+  *margin-left:-38px;
+  padding-left:45px;
+  padding-top:2px;
+  position:absolute;
+  width:606px;
+}
+
+#resultados ul {
+  margin:0 auto;
+  width:560px;
+  overflow: hidden;
+}
+
+#resultados ul li {
+  clear: both;
+}
+
+#resultados ul li h3 {
+  background-image: url(/resources/nuevo/h3corto.jpg);
+}
+
+#resultados ul img {
+  position: absolute;
+  border: 0;
+  margin-top:21px;
+}
+
+#resultados ul .fechas {
+  padding: 4px 0;
+}
+
+#resultados ul .fechas, #resultados ul table {
+  width: 560px;
+  border-collapse: collapse;
+  font-size: 0.85em;
+  text-align: right;
+}
+
+#resultados ul table caption {
+  width: auto;
+  background: #8f969c;
+  text-align: right;
+  padding: 0 5px;
+  line-height: 1.5em;
+  height: 1.5em;
+  margin-top: 0;
+}
+
+#resultados ul table th {
+  background: #b5b9bd;
+  font-weight: normal;
+  padding: 5px;
+  color: #565a5d;
+}
+
+#resultados ul table td {
+  background: #dbdfe1;
+  color: #565a5d;
+  padding: 5px;
+  border-bottom: 0;
+}
+
+#resultados ul table tr.par td {
+  background: #eceff2;
+}
+
+#resultados ul table td.primera {
+/*  background: transparent !important;*/
+}
+
+#resultados caption a {
+  color: white;
+  text-decoration: none;
+}
+
+#resultados ul tbody a {
+  color: red;
+  text-decoration: none;
+}
+
+#resultados h3 {
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+#principal .id2551 div.mes, #buscadorOfertas div.mes{
+  top: 36px;
+  left: 14px;
+}
+
+#principal .id2551 div.tipoOferta, #buscadorOfertas div.tipoOferta{
+  top: 36px;
+  left: 230px;
+}
+.precioAnterior {
+  text-decoration:line-through;
+}
+
+#buscadorOfertas div.boton_ofertas {
+  right:27px;
+  top:58px;
+  background:transparent url(/resources/nuevo/fondoOfertas.gif) no-repeat scroll 0 0;
+  height:36px;
+  width:65px;
+  padding-top:10px;
+  padding-left:3px;
+}
+
+#principal .boton_ofertas a{
+ 
+border:0 none;
+color:white;
+font-size:1.05em !important;
+
+padding-bottom:7px;
+  *padding-bottom: 0;
+  
+}
+
+.enlaceImagen
+{
+  position:absolute;
+  margin-top:21px;
+}
+
+.enlaceImagen a {
+  display:block;
+  height:62px;
+  width:101px;
+  text-indent:-3000px;
+ 
+}

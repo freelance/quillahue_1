@@ -1,0 +1,11 @@
+h1 {
+  background-image: url(/resources/nuevo/titulos/mirlo.jpg);
+}
+#principal .generico h2 {
+  background-image: url(/resources/nuevo/cabeceras/mirlo.jpg);
+}
+
+.generico{
+  padding-left:8px;
+  padding-bottom:8px;
+}

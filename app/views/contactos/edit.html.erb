@@ -1,0 +1,44 @@
+<h1>Editing contacto</h1>
+
+<% form_for(@contacto) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </p>
+  <p>
+    <%= f.label :ciudad %><br />
+    <%= f.text_field :ciudad %>
+  </p>
+  <p>
+    <%= f.label :pais %><br />
+    <%= f.text_field :pais %>
+  </p>
+  <p>
+    <%= f.label :cant_per %><br />
+    <%= f.text_field :cant_per %>
+  </p>
+  <p>
+    <%= f.label :f_in %><br />
+    <%= f.datetime_select :f_in %>
+  </p>
+  <p>
+    <%= f.label :f_eg %><br />
+    <%= f.datetime_select :f_eg %>
+  </p>
+  <p>
+    <%= f.label :tel %><br />
+    <%= f.text_field :tel %>
+  </p>
+  <p>
+    <%= f.label :consulta %><br />
+    <%= f.text_area :consulta %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @contacto %> |
+<%= link_to 'Back', contactos_path %>

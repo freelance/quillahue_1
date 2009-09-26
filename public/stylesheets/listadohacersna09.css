@@ -1,0 +1,46 @@
+h1 {
+  background-image: url(/resources/nuevo/sna/cabeceras/hacertitulo.jpg);
+}
+
+#menuGrande li.opcion1 a{
+   background-image: url(/resources/nuevo/sna/imagenes/1diamenu.jpg);
+}
+
+#menuGrande li.opcion2 a{
+   background-image: url(/resources/nuevo/sna/imagenes/2diamenu.jpg);
+}
+
+#menuGrande li.opcion3 a{
+   background-image: url(/resources/nuevo/sna/imagenes/finesmenu.jpg);
+}
+
+#menuGrande li.opcion4 a{
+   background-image: url(/resources/nuevo/sna/imagenes/piscinamenu.jpg);
+}
+
+#menuGrande li.opcion5 a{
+   background-image: url(/resources/nuevo/sna/imagenes/alojamenu.jpg);
+}
+#menuGrande li.opcion6 a{
+   background-image: url(/resources/nuevo/sna/imagenes/comermenu.jpg);
+}
+#menuGrande li.opcion7 a{
+   background-image: url(/resources/nuevo/sna/imagenes/senderomenu.jpg);
+}
+#menuGrande li.opcion8 a{
+   background-image: url(/resources/nuevo/sna/imagenes/senderomonmenu.jpg);
+}
+#menuGrande li.opcion9 a{
+   background-image: url(/resources/nuevo/sna/imagenes/mirlomenu.jpg);
+}
+#menuGrande li.opcion10 a{
+   background-image: url(/resources/nuevo/sna/imagenes/montebajomenu.jpg);
+}
+#menuGrande li.opcion11 a{
+   background-image: url(/resources/nuevo/sna/imagenes/escbicimenu.jpg);
+}
+#menuGrande li.opcion12 a{
+   background-image: url(/resources/nuevo/sna/imagenes/dossiermenu.jpg);
+}
+#menuGrande li.opcion13 a{
+   background-image: url(/resources/nuevo/sna/imagenes/remontemenu.jpg);

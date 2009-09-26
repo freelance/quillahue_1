@@ -1,0 +1,20 @@
+<h1>Editing servicios</h1>
+
+<% form_for(@servicios) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </p>
+  <p>
+    <%= f.label :cabana %><br />
+    <%= f.text_field :cabana %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @servicios %> |
+<%= link_to 'Back', servicios_path %>

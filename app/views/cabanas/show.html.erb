@@ -1,0 +1,18 @@
+<p>
+  <b>Nombre:</b>
+  <%=h @cabana.nombre %>
+</p>
+
+<p>
+  <b>Servicios:</b>
+  <%=h @cabana.servicios %>
+</p>
+
+<p>
+  <b>Descripcion:</b>
+  <%=h @cabana.descripcion %>
+</p>
+
+
+<%= link_to 'Edit', edit_cabana_path(@cabana) %> |
+<%= link_to 'Back', cabanas_path %>

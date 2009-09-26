@@ -1,0 +1,8 @@
+h1 {
+  background-image: url(/resources/nuevo/sna/cabeceras/bmwtitulo.jpg);
+}
+
+#principal .generico h2 {
+   background-image: url(/resources/nuevo/sna/cabeceras/bmwcabe.jpg);
+  height: 212px;
+}

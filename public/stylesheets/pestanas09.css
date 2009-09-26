@@ -1,0 +1,108 @@
+#ventana {
+	margin-left: 1em;
+}
+
+#ventana .pantalla h2 {
+	display: none;
+}
+
+#ventana .pantalla {
+	border: 1px solid #1e5180;
+	border-top: 5px solid #1f517f;
+	border-bottom: 5px solid #1e5180;
+	padding: 10px 10px 15px 10px;
+}
+
+#ventana .pantalla {
+	display: none;
+	clear: both;
+}
+
+ul#pestanas {
+	margin: 10px 0 0 0;
+	padding: 0;
+	font-size: 0.7em;
+	line-height: 1.4em;
+}
+
+ul#pestanas li {
+	display: inline;
+	background: url(/resources/i/alojamientos/tab1.gif) top left no-repeat;
+	padding-left: 7px;
+	cursor: hand;
+	margin: 0;
+	border-bottom: 1px solid #1f517f;
+}
+
+ul#pestanas li.activo {
+	background: url(/resources/i/alojamientos/tabActivo1.gif) top left no-repeat;
+	padding-left: 5px;
+	cursor: default;
+}
+
+
+
+ul#pestanas li#pestana0.activo {
+	background-image: url(/resources/i/alojamientos/tabActivo10.gif);
+}
+
+ul#pestanas li#pestana1.activo {
+	background-image: url(/resources/i/alojamientos/tabActivo11.gif);
+}
+
+ul#pestanas li#pestana2.activo {
+	background-image: url(/resources/i/alojamientos/tabActivo12.gif);
+}
+
+ul#pestanas li#pestana3.activo {
+	background-image: url(/resources/i/alojamientos/tabActivo13.gif);
+}
+
+ul#pestanas li#pestana4.activo {
+	background-image: url(/resources/i/alojamientos/tabActivo14.gif);
+}
+
+
+ul#pestanas li.activo span span {
+	color: #1E5180;
+	background: transparent;
+}
+
+ul#pestanas li span {
+	background: url(/resources/i/alojamientos/tab2.gif) top right no-repeat;
+	padding-right: 5px;
+}
+
+/*ul#pestanas li.activo span {
+	background: url(/resources/i/alojamientos/tabActivo2.gif) top right no-repeat;
+}*/
+
+ul#pestanas  li#pestana0.activo span {
+	background: url(/resources/i/alojamientos/tabActivo00.gif) top right no-repeat;
+}
+
+ul#pestanas  li#pestana1.activo span {
+	background: url(/resources/i/alojamientos/tabActivo01.gif) top right no-repeat;
+}
+
+ul#pestanas  li#pestana2.activo span {
+	background: url(/resources/i/alojamientos/tabActivo02.gif) top right no-repeat;
+}
+
+ul#pestanas  li#pestana3.activo span {
+	background: url(/resources/i/alojamientos/tabActivo03.gif) top right no-repeat;
+}
+
+ul#pestanas  li#pestana4.activo span {
+	background: url(/resources/i/alojamientos/tabActivo04.gif) top right no-repeat;
+}
+
+
+ul#pestanas li span span {
+	color: #1e5180;
+	padding: 3px 0 0 0;
+	margin: 0;
+	height: 11px;
+	border-bottom: 0;
+	background: transparent;
+}

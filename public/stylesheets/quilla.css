@@ -1,0 +1,60 @@
+#container
+    Page container (usually a <div>)
+
+#branding
+    Used for a header or banner to brand the site.
+
+    #branding-logo
+        Used for a site logo
+
+    #branding-tagline
+        Used for a strapline or tagline to define the site’s purpose
+
+#nav or #navigation
+    Used to contain a navigation device
+{float: right;}
+    #nav-main
+        Main or primary navigation
+
+    #nav-section
+        Navigation to pages within the current site section
+
+    #nav-external
+        Navigation to pages outside the site
+
+    #nav-supplementary or #nav-supp
+        A supplementary list of links, perhaps in a footer. This can replace the common, but presentational #footer
+
+    #nav-(whatever)
+        A list of links named at a designer’s descretion
+
+#search
+    Related to search interface and search results
+
+    #search-input
+        A search form
+
+    #search-output
+        Search results which could include a <div> or other markup including definition lists
+
+#content
+    Used for content rather than for another purpose such as navigation
+
+    #content-main
+        The main content area
+
+    #content-news
+        News related content
+
+    #content-(whatever)
+        Could include any form of content, including #content-related, #content-quote etc.
+
+#siteinfo
+    Used for various site related information
+
+    #siteinfo-legal
+        Copyright information etc.
+
+    #siteinfo-credits
+        Designer or other credits
+

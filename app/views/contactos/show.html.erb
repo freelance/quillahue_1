@@ -1,0 +1,43 @@
+<p>
+  <b>Nombre:</b>
+  <%=h @contacto.nombre %>
+</p>
+
+<p>
+  <b>Ciudad:</b>
+  <%=h @contacto.ciudad %>
+</p>
+
+<p>
+  <b>Pais:</b>
+  <%=h @contacto.pais %>
+</p>
+
+<p>
+  <b>Cant per:</b>
+  <%=h @contacto.cant_per %>
+</p>
+
+<p>
+  <b>F in:</b>
+  <%=h @contacto.f_in %>
+</p>
+
+<p>
+  <b>F eg:</b>
+  <%=h @contacto.f_eg %>
+</p>
+
+<p>
+  <b>Tel:</b>
+  <%=h @contacto.tel %>
+</p>
+
+<p>
+  <b>Consulta:</b>
+  <%=h @contacto.consulta %>
+</p>
+
+
+<%= link_to 'Edit', edit_contacto_path(@contacto) %> |
+<%= link_to 'Back', contactos_path %>

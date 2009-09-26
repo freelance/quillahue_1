@@ -1,0 +1,38 @@
+<p>
+  <b>Nombre:</b>
+  <%=h @complejo.nombre %>
+</p>
+
+<p>
+  <b>Pais:</b>
+  <%=h @complejo.pais %>
+</p>
+
+<p>
+  <b>Provincia:</b>
+  <%=h @complejo.provincia %>
+</p>
+
+<p>
+  <b>Ciudad:</b>
+  <%=h @complejo.ciudad %>
+</p>
+
+<p>
+  <b>Direccion:</b>
+  <%=h @complejo.direccion %>
+</p>
+
+<p>
+  <b>Telefono:</b>
+  <%=h @complejo.telefono %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @complejo.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_complejo_path(@complejo) %> |
+<%= link_to 'Back', complejos_path %>

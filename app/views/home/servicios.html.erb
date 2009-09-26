@@ -1,0 +1,17 @@
+<div id="contentarea">
+
+<%= render :partial => 'menu_servicos' %>
+
+Texto
+</div>
+
+<div id="sidebar">
+  <h2>Informacion</h2>
+  <% if !@servicios.blank? %>
+  <% for servicio in @servicios %>
+  <%= servicio.nombre %>
+  <% end %>
+  <% else %>
+  No servicios.
+  <% end %>
+</div>

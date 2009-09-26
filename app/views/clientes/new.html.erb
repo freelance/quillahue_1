@@ -1,0 +1,47 @@
+<h1>New clientes</h1>
+
+<% form_for(@clientes) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </p>
+  <p>
+    <%= f.label :apellido %><br />
+    <%= f.text_field :apellido %>
+  </p>
+  <p>
+    <%= f.label :direccion %><br />
+    <%= f.text_field :direccion %>
+  </p>
+  <p>
+    <%= f.label :ciudad %><br />
+    <%= f.text_field :ciudad %>
+  </p>
+  <p>
+    <%= f.label :pais %><br />
+    <%= f.text_field :pais %>
+  </p>
+  <p>
+    <%= f.label :telefono %><br />
+    <%= f.text_field :telefono %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :precio_total %><br />
+    <%= f.text_field :precio_total %>
+  </p>
+  <p>
+    <%= f.label :precio_unit %><br />
+    <%= f.text_field :precio_unit %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', clientes_path %>

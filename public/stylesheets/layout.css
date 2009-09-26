@@ -1,0 +1,656 @@
+@import url(/resources/nuevo/css/menu.css);
+@import url(/resources/nuevo/css/generico.css);
+
+body {
+  text-align: center;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 80%;
+  color: #59595a;
+  padding-bottom: 1em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+#contenedor {
+
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  width: 992px;
+}
+
+#cabecera {
+  position: relative;
+  height: 196px;
+  background: url(/resources/nuevo/cabecera.jpg) top left no-repeat;
+  margin-left: 2px;
+}
+
+#enlaceHome {
+  position: absolute;
+  top: 18px;
+  left: 23px;
+  width: 111px;
+  height: 117px;
+  display: block;
+}
+
+#enlaceHome a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#enlaceHome span {
+  visibility: hidden;
+  display: block;
+  width: 100%;
+  height: 117px;
+  border: 1px solid red;
+}
+
+#parteDeNieve {
+  position: absolute;
+  right: 18px;
+  top: 34px;
+  width: 19em;
+}
+
+#parteDeNieve #enlaceParte {
+  text-indent: -5000em;
+  width: 50px;
+  height: 48px;
+  display: block;
+  position: absolute;
+  margin-left: -45px;
+  margin-top: 10px;
+  background: url(/resources/nuevo/verparte.png) no-repeat;
+  _background: url(/resources/nuevo/verparte.gif) no-repeat;
+  overflow: hidden;
+}
+
+#parteDeNieve img {
+  float: right;
+  margin-left: 7px;
+  margin-top: 10px;
+}
+
+#parteDeNieve li {
+  color: white;
+  font-size: 0.85em;
+  text-align: right;
+  margin-right: 47px;
+}
+
+#contenido {
+  background: url(/resources/nuevo/fondoContenido.gif) repeat-y;
+  padding: 19px;
+  width: 954px;
+  min-height: 668px;
+}
+
+#pie {
+  clear: both;
+  position: relative;
+  height: 159px;
+  background: url(/resources/nuevo/pie.jpg) no-repeat;
+}
+
+#pie #datos {
+  position: absolute;
+  right: 49px;
+  top: 71px;
+  color: white;
+  font-size: 0.8em;
+}
+
+#pie #datos ul {
+  list-style: none;
+}
+
+#pie #datos ul li {
+  line-height: 1.5em;
+}
+
+#pie .telefono {
+  font-size: 2em;
+}
+
+#opciones {
+  right: 18px;
+  top: 115px;
+  position: absolute;
+  color: white;
+}
+
+#idiomas {
+  display: inline;
+  padding-left: 23px;
+  background: url(/resources/nuevo/idiomas.png) left no-repeat;
+  _background: url(/resources/nuevo/idiomas.gif) left no-repeat;
+  line-height: 17px;
+  padding-right: 7px;
+
+
+  border-right: 1px solid white;
+}
+
+#idiomas ul {
+  display: none;
+  position: absolute;
+}
+
+#buscador {
+  display: inline;
+  padding-left: 10px;
+}
+
+#textoBuscador {
+  margin-left: 3px;
+  font-size: 0.9em;
+  background: #3b62c1;
+  border: 1px solid white;
+  padding: 1px 2px;
+  cursor: text;
+  color: white
+}
+
+#buscar {
+  text-indent: -100em;
+  border: 0;
+  background: url(/resources/nuevo/buscar.png) right no-repeat;
+  _background: url(/resources/nuevo/buscar.gif) right no-repeat;
+  width: 35px;
+  height: 25px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#principal .pestanas h2 {
+  width: auto;
+}
+
+#principal .pestanas h2 ul {
+  margin-left: 0;
+}
+
+h2, h3, h4, h5 {
+  margin-top: 0;
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: normal;
+  clear: both;
+}
+
+h4, h5 {
+  color:#105da1;
+  margin: 2em 5px 1em;
+  font-style: normal;
+  font-size: 1.05em;
+  border-bottom: 1px solid #105da1;
+}
+
+h5 {
+  border-bottom: 0;
+  margin: 1em 5px;
+}
+
+dt {
+  color: #f9581c;
+  margin-bottom: 2px;
+/*  border-bottom: 1px solid #f9581c;*/
+/*  margin-right: 3em;*/
+}
+
+dd {
+  margin-right: 3em;
+}
+
+.cajita {
+  padding: 8px 15px;
+  font-size: 0.85em;
+
+
+}
+
+#banners {
+  background: url(/resources/nuevo/fondoBanners.jpg) no-repeat;
+  width: 576px;
+  height: 165px;
+  clear: left;
+  padding: 11px;
+  text-align: center;
+ _padding-rigth:0 important!;
+ _margin-rigth:0 important!;
+
+}
+
+#sinbanners
+{
+  width: 576px;
+  clear: left;
+  height: 165px;
+  padding: 11px;
+  text-align: center;
+}
+
+#banners ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#banners ul li {
+  display: inline;
+  margin: 0 5px;
+
+}
+
+#principal {
+  width: 597px;
+  padding: 0 10px 30px 10px;
+  float: left;
+  background: url(/resources/nuevo/fondoPrincipal.png) left bottom no-repeat;
+  margin-top: 10px;
+}
+
+#secundaria {
+  margin-top: 10px;
+  float: right;
+  width: 337px;
+  margin-left: 0px;
+}
+
+#breadcrumbs {
+  height: 22px;
+  line-height: 22px;
+  background: url(/resources/nuevo/fondoMiguitas.jpg) top right no-repeat;
+  padding-left: 10px;
+  color: #59595a;
+  margin-bottom: 15px;
+  width: 937px;
+}
+
+#breadcrumbs a {
+  padding-right: 30px;
+  background: url(/resources/nuevo/cuadraditosMiguitas.gif) right no-repeat;
+  text-decoration: none;
+  color: #59595a;
+}
+
+#breadcrumbs em {
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1 {
+  margin: -13px 0 15px 0;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 598px;
+  height: 115px;
+  text-indent: -9000em;
+  z-index: 0;
+}
+
+.paginacion {
+  clear: both;
+  margin: 10px 0 20px;
+  text-align: center;
+  padding-top: 0px;
+}
+
+
+
+
+
+.paginacion span, .paginacion a {
+  color: #666;
+  text-decoration: none;
+}
+
+.paginacion span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.volver {
+  background: url(/resources/nuevo/boton_gris_peq.gif) left no-repeat;
+  padding-left: 13px;
+  line-height: 28px;
+  height: 28px;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 2em;
+}
+
+.volver:visited {
+  color: #fff;
+}
+
+#principal h2, #principal h3 {
+  height: 22px;
+  line-height: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  clear: both;
+  color: white;
+  margin-bottom: 1em;
+}
+
+#principal h2 {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 0;
+  width: 586px;
+  overflow: hidden;
+}
+
+#principal h2 span, #principal caption span, #principal h2 ul {
+  background: url(/resources/nuevo/h2.jpg) top no-repeat;
+  height: 22px;
+  padding: 0 10px;
+  width: 566px;
+  display: block;
+}
+
+#principal h2 ul span {
+  display: inline;
+  background: transparent;
+  padding: 0;
+}
+
+#principal h3 {
+  background: url(/resources/nuevo/h3.jpg) top no-repeat;
+  margin-top: 1em;
+  font-size: 1em;
+}
+
+p {
+  margin: 1em 5px;
+}
+
+#principal h2 ul {
+  margin-right: 1em;
+  width: 576px;
+}
+
+#principal h2 ul li {
+  float: left;
+  background: url(/resources/nuevo/palitoPestanas.gif) left no-repeat;
+  padding: 0 1em;
+  margin-top: 1px;
+  cursor: pointer;
+}
+
+#principal h2 ul li.primero {
+  background: transparent;
+  padding-left: 0.5em;
+}
+
+#principal h2 ul li.activo {
+  color: #fcb51c;
+}
+
+#principal ul {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+blockquote p {
+  margin: 0.2em 2em;
+}
+
+table {
+  width: 100%;
+   border-collapse: collapse;
+}
+
+table caption {
+  width: 586px;
+  background: url(/resources/nuevo/h2.jpg) no-repeat;
+  height: 20px;
+  line-height: 20px;
+  color: white;
+  text-align: left;
+  margin-top: 1em;
+}
+
+table th, table td {
+  background: white;
+  border-bottom:1px solid #ccc;
+  font-size:0.85em;
+  padding:8px;
+}
+
+table th.headerSortUp {
+  background: url(/resources/nuevo/abajo.gif) 8px center no-repeat;
+  padding-left: 25px;
+}
+
+table th.headerSortDown {
+  background: url(/resources/nuevo/arriba.gif) 8px center no-repeat;
+  padding-left: 25px;
+}
+
+#principal  ul#menuGrande li{
+  height:196px; 
+  margin-left:12px;
+  _margin-left: 8px;
+}
+
+#menuGrande li{
+  background: url(/resources/nuevo/menu/piegris.jpg) no-repeat center bottom;
+  float:left;  
+ margin:13px;
+ width:169px;
+ height:27px;
+}
+
+#menuGrande span{
+  background: url(/resources/nuevo/menu/cabecera.jpg) no-repeat;
+  display:block;
+  height:46px;
+  width:151px;
+  text-align:right;
+/*  margin-right:10px;*/
+  padding-right:10px;
+  padding-left:8px;
+  padding-top:8px;
+  
+}
+
+#menuGrande a{
+  background: url(/resources/nuevo/menu/general.jpg) no-repeat center bottom;
+  width:169px;
+  height:169px;
+  display:block;
+  text-decoration:none;
+  color:white;
+  font-size: 90%;
+}
+
+a:link{
+  color:#8d8d8f;
+  text-decoration:none;
+}
+
+a:visited {
+  color: #296EAF;
+  text-decoration: none;
+}
+
+.generico .ELHholder{
+  width:322px;
+  margin-left:8px;
+}
+
+.generico #ELHvm338{
+  margin-top:57px;
+}
+
+/* Avisos */
+
+.aviso {
+  color: red;
+  text-align: left;
+}
+
+.aviso.grande {
+  background: url(/resources/nuevo/fondo_avisos.jpg) no-repeat;
+  height:154px;
+  width:298px;
+  padding: 7px 20px;
+  position: relative;
+}
+
+.aviso.grande h3 {
+  margin-bottom: 10px;
+}
+
+.aviso.grande.confoto img {
+  width: 100px;
+  float: left;
+}
+
+.aviso.grande.confoto .texto {
+  margin-left: 110px;
+}
+
+
+.aviso.grande .enlace {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.aviso.peque {
+  float: left;
+  width: 136px;
+  height: 121px;
+  padding: 5px 15px;
+  background: url(/resources/nuevo/fondo_aviso_peque.jpg) no-repeat;
+  margin-left: 1px;
+  _margin-left: 0;
+  position: relative;
+}
+
+.aviso.peque h3 {
+  margin-bottom: 7px;
+}
+
+.aviso.peque .enlace {
+  position: absolute;
+  bottom: 18px;
+  right: 13px;
+}
+
+.aviso .enlace a {
+  background: url(/resources/nuevo/boton_rojo_peq.gif) center no-repeat;
+  width: 68px;
+  line-height: 26px;
+  height: 28px;
+  display: block;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+
+#login {
+  background: url(/resources/nuevo/fondoLogin.jpg) no-repeat;
+  height: 99px;
+  width: 308px;
+  position: relative;
+  clear: both;
+}
+
+#login a {
+  color: #565a5d;
+  text-decoration: none;
+}
+
+#login input {
+  color: #b0b0b2;
+  border: 1px solid #bbb;
+  padding: 0 2px;
+}
+
+#usuario, #clave, #recordar, #alta, #enviarLogin {
+  position: absolute;
+}
+
+#usuario {
+  left: 20px;
+  top: 45px;
+}
+
+#clave {
+  top: 45px;
+  left: 140px;
+}
+
+#recordar {
+  left: 140px;
+  bottom: 30px;
+}
+
+#alta {
+  left: 20px;
+  bottom: 30px;
+}
+
+#login input#enviarLogin {
+  top: 45px;
+  right: 20px;
+  width: 54px;
+  height: 30px;
+  border: 0;
+  background: url(/resources/nuevo/fondoBotonLogin.jpg) no-repeat;
+  color: white;
+  cursor: pointer;
+}
+
+.bannersInteriores {
+  width: 315px;
+  height: 175px;
+  background: url(/resources/nuevo/fondoBanners2.jpg) repeat-y;
+  padding: 0 12px;
+  _padding: 0;
+}
+
+.bannersInteriores a {
+  display:block;
+  float:left;
+  margin:20px 10px 15px;
+}
+
+#secundaria {
+  _margin-left: -10px;
+}

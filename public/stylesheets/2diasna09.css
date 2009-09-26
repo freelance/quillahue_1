@@ -1,0 +1,11 @@
+@import url(listadoalojasna09.css);
+
+h1 {
+  background-image: url(/resources/nuevo/sna/cabeceras/2diatitulo.jpg);
+}
+#principal .generico h2 {
+  background-image: url(/resources/nuevo/sna/cabeceras/2diacabe.jpg);
+
+}
+prueba{
+ background-image: url(/resources/nuevo/cabeceras/encarretera.jpg);}

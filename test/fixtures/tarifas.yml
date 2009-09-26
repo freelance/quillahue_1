@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  precio_per_base: 1.5
+  precio_cab_base: 1.5
+  precio_p_dia: 1.5
+  precio_p_semana: 1.5
+  precio_p_fdslargo: 1.5
+  cabana: 
+
+two:
+  precio_per_base: 1.5
+  precio_cab_base: 1.5
+  precio_p_dia: 1.5
+  precio_p_semana: 1.5
+  precio_p_fdslargo: 1.5
+  cabana: 

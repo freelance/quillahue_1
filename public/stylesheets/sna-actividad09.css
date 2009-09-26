@@ -1,0 +1,108 @@
+/**********
+  DETALLE
+**********/
+
+.actividad {
+  font-size: .8em;
+  text-align: justify;
+}
+
+img.foto {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+h3 {
+  clear: both;
+}
+
+ul.dificultad, ul.servicios {
+  /*list-style-image: url(/resources/sna/iconos/bulletActiva.gif);*/
+  vertical-align: middle;
+  : 120px;
+}
+
+ul.servicios li {
+}
+
+p.comprar, p.etapa  {
+  margin-left: 20px;  
+}
+
+p.comprar img {
+  border: 0;
+  margin-left: 7px;
+  vertical-align: middle;
+}
+
+img.recorrido {
+  margin-bottom: 20px;
+}
+
+/**********
+  LISTADO
+**********/
+
+.listadoActividades{
+  font-size: .8em;
+  text-align: left;
+  width: 100%;
+}
+
+.listadoActividades h2{
+  border-bottom: 1px solid black;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.listadoActividades ul{
+  list-style-type: none;
+  padding: 0 5px;
+  margin: 0 0 10px 0;
+}
+
+.listadoActividades a.verMas{
+  display: block;
+  text-align: right;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 3px;
+}
+
+.listadoActividades li{
+  margin: 4px 2px;
+}
+
+.listadoActividades li a{
+  padding-left: 27px;
+}
+
+.listadoActividades li a.destacado{
+  font-weight: bold;
+}
+
+
+.listadoActividades li a img {
+  border: 0;
+  padding-right: 5px;
+}
+
+.listadoActividades li.dificultadVerde a {
+  background: url(/resources/sna/iconos/verde.gif) left center no-repeat;
+  color: green;
+}
+
+.listadoActividades li.dificultadAzul a {
+  background: url(/resources/sna/iconos/azul.gif) left center no-repeat;
+  color: blue;
+}
+
+.listadoActividades li.dificultadRojo a {
+  background: url(/resources/sna/iconos/rojo.gif) left center no-repeat;
+  color: red;
+}

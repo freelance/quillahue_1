@@ -1,0 +1,111 @@
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+}
+/* Header */
+
+#header {
+	width: 960px;
+	height: 110px;
+	margin: 0 auto;
+}
+
+/* Logo */
+
+#logo {
+	float: left;
+	height: 65px;
+	margin: 0;
+	padding-top: 20px;
+	color: #FFFFFF;
+}
+
+#logo h1, #logo p {
+	margin: 0;
+	padding: 0;
+}
+
+#logo h1 {
+	float: left;
+	padding-left: 25px;
+	letter-spacing: -1px;
+	text-transform: lowercase;
+	font-size: 2.6em;
+}
+
+#logo p {
+	float: left;
+	margin: 0;
+	padding: 12px 0 0 10px;
+	font: normal 14px Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+} 
+
+#logo a {
+	border: none;
+	background: none;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/* Menu */
+
+#menu {
+	width: 960px;
+	height: 50px;
+	margin: 0 auto;
+	background: url(images/img01.gif)  no-repeat left top
+	padding: 0;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0px 0px 0px 25px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+	height: 38px;
+}
+
+#menu a {
+	display: block;
+	margin-right: 3px;
+	padding: 10px 30px 7px 30px;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	color: #FFFFFF;
+	border: none;
+}
+
+#menu a:hover, #menu .current_page_item a {
+}
+
+#menu .current_page_item a {
+	padding-left: 0;
+}
+
+#menu a:hover {
+	text-decoration: underline;
+}
+
+#page {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+	background: url(images/img04.jpg) repeat-y left top;
+}
+
+#page-bgtop {
+	background: url(images/img03.jpg) no-repeat left top;
+}
+
+#page-bgbtm {
+	padding: 30px 10px 0px 20px;
+	background: url(images/img05.jpg) no-repeat left bottom;
+}

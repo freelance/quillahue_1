@@ -1,0 +1,71 @@
+h1 {
+  background-image: url(/resources/nuevo/titulos/alojamientos.jpg);
+}
+
+#menuGrande li.opcion1 a{
+   background-image: url(/resources/nuevo/menu/call.jpg);
+}
+
+#menuGrande li.opcion2 a{
+   background-image: url(/resources/nuevo/menu/alojamientosn.jpg);
+}
+
+#menuGrande li.opcion3 a{
+   background-image: url(/resources/nuevo/menu/clases.jpg);
+}
+
+#menuGrande li.opcion4 a{
+   background-image: url(/resources/nuevo/menu/clases.jpg);
+}
+
+#detalle {
+  margin-left: 5px;
+  width: 586px;
+}
+
+#detalle h2 {
+  height: 212px;
+}
+
+#detalle .pestanas h2 {
+  height: 22px;
+}
+
+#detalle h2 ul {
+  width: 566px;
+}
+
+#detalle .descripcion {
+  float: right;
+  width: 375px;
+}
+
+#detalle .descripcion p {
+  margin: 0 0 1em 0;
+}
+
+#detalle .foto {
+  width: 190px;
+}
+
+#detalle .servicios {
+  width: 200px;
+}
+
+#detalle .servicios h4 {
+  clear: none;
+  margin: 1em 0;
+}
+
+#detalle #precios ul, #detalle #preciosFinDeSemana ul {
+  list-style: square inside;
+  margin-bottom: 1em;
+}
+
+#detalle #precios ul li, #detalle #preciosFinDeSemana ul li {
+  margin-bottom: 0.5em;
+}
+
+.plano{
+  margin-top:5px;
+}

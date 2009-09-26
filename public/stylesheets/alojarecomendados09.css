@@ -1,0 +1,11 @@
+@import url(listadoalojasna09.css);
+
+h1 {
+  background-image: url(/resources/nuevo/titulos/carretera.jpg);
+}
+#principal .generico h2 {
+  background-image: url(/resources/nuevo/cabeceras/encarretera.jpg);
+
+}
+prueba{
+ background-image: url(/resources/nuevo/cabeceras/encarretera.jpg);}
