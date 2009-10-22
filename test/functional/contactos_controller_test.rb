@@ -12,15 +12,15 @@ class ContactosControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should create contacto" do
-    assert_difference('Contacto.count') do
-      post :create, :contacto => { }
+  test "should create contactos" do
+    assert_difference('Contactos.count') do
+      post :create, :contactos => { }
     end
 
-    assert_redirected_to contacto_path(assigns(:contacto))
+    assert_redirected_to contactos_path(assigns(:contactos))
   end
 
-  test "should show contacto" do
+  test "should show contactos" do
     get :show, :id => contactos(:one).to_param
     assert_response :success
   end
@@ -30,13 +30,13 @@ class ContactosControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should update contacto" do
-    put :update, :id => contactos(:one).to_param, :contacto => { }
-    assert_redirected_to contacto_path(assigns(:contacto))
+  test "should update contactos" do
+    put :update, :id => contactos(:one).to_param, :contactos => { }
+    assert_redirected_to contactos_path(assigns(:contactos))
   end
 
-  test "should destroy contacto" do
-    assert_difference('Contacto.count', -1) do
+  test "should destroy contactos" do
+    assert_difference('Contactos.count', -1) do
       delete :destroy, :id => contactos(:one).to_param
     end
 

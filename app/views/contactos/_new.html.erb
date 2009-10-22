@@ -1,9 +1,7 @@
 
-
-
 <h1>New contacto</h1>
 
-<% form_for(@contacto) do |f| %>
+<% form_for @contacto  do |f| %>
   <%= f.error_messages %>
 
   <p>
@@ -43,4 +41,4 @@
   </p>
 <% end %>
 
-<%= link_to 'Back', contactos_path %>
+<%#= link_to 'Back', contactos_path %>

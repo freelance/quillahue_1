@@ -7,14 +7,14 @@
     <th>Descripcion</th>
   </tr>
 
-<% @cabanas.each do |cabana| %>
+<% @cabanas.each do |cabanas| %>
   <tr>
-    <td><%=h cabana.nombre %></td>
-    <td><%=h cabana.servicios %></td>
-    <td><%=h cabana.descripcion %></td>
-    <td><%= link_to 'Show', cabana %></td>
-    <td><%= link_to 'Edit', edit_cabana_path(cabana) %></td>
-    <td><%= link_to 'Destroy', cabana, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%=h cabanas.nombre %></td>
+    <td><%=h cabanas.servicios %></td>
+    <td><%=h cabanas.descripcion %></td>
+    <td><%= link_to 'Show', cabanas_path %></td>
+    <td><%= link_to 'Edit', edit_cabana_path(cabanas) %></td>
+    <td><%= link_to 'Destroy', cabanas, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>

@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 
-<%= stylesheet_link_tag 'styles' %>
+<%= stylesheet_link_tag 'styles','galleria' %>
 <%= javascript_include_tag 'jquery', 's3Slider', 'jquery.galleria'  %>
 
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
@@ -76,6 +76,9 @@ $(document).ready(function() {
   $('#slider1').s3Slider({
     timeOut: 4000
   });
+
+$('ul.gallery').galleria();
+
 });
 </script>
 
@@ -104,6 +107,10 @@ $(document).ready(function() {
 <%= yield %>
 </div>
 
+<ul class="gallery">
+<li><a href="/images/01.gif" title="A caption"><img src="/images/01.gif" alt="Image01"></a></li>
+</ul>
+
 <div id="footer">
   <h2>pie</h2>
 </div>
@@ -111,7 +118,3 @@ $(document).ready(function() {
 </div>
 </body>
 </html>
-
-<script type="text/javascript">
-jQuery(function($) { $('ul.gallery').galleria(); });
-</script>

@@ -2,33 +2,29 @@
 
 <table>
   <tr>
+    <th>Apellido</th>
     <th>Nombre</th>
-    <th>Ciudad</th>
-    <th>Pais</th>
-    <th>Cant per</th>
-    <th>F in</th>
-    <th>F eg</th>
-    <th>Tel</th>
+    <th>Email</th>
     <th>Consulta</th>
+    <th>Tel</th>
+    <th>Cabaña</th>
   </tr>
 
-<% @contactos.each do |contacto| %>
+<% @contactos.each do |contactos| %>
   <tr>
-    <td><%=h contacto.nombre %></td>
-    <td><%=h contacto.ciudad %></td>
-    <td><%=h contacto.pais %></td>
-    <td><%=h contacto.cant_per %></td>
-    <td><%=h contacto.f_in %></td>
-    <td><%=h contacto.f_eg %></td>
-    <td><%=h contacto.tel %></td>
-    <td><%=h contacto.consulta %></td>
-    <td><%= link_to 'Show', contacto %></td>
-    <td><%= link_to 'Edit', edit_contacto_path(contacto) %></td>
-    <td><%= link_to 'Destroy', contacto, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%=h contactos.apellido %></td>
+    <td><%=h contactos.nombre %></td>
+    <td><%=h contactos.email %></td>
+    <td><%=h contactos.consulta %></td>
+    <td><%=h contactos.tel %></td>
+    <td><%=h contactos.cabaña %></td>
+    <td><%= link_to 'Show', contactos %></td>
+    <td><%= link_to 'Edit', edit_contactos_path(contactos) %></td>
+    <td><%= link_to 'Destroy', contactos, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New contacto', new_contacto_path %>
+<%= link_to 'New contactos', new_contactos_path %>

@@ -3,6 +3,8 @@ class HomeController < ApplicationController
 
   def index
     @ubicacions = Ubicacion.all
+    @promotions = Promotion.all
+    @cabanas = Cabana.all
   end
 
   def cabana
@@ -27,6 +29,7 @@ class HomeController < ApplicationController
   end
 
  def cipres
+     @servicio = Servicio.all
  end
   
   def coihue
@@ -49,8 +52,9 @@ class HomeController < ApplicationController
   end
   
   def promotions
-   @promotion = Promotion.find(params[:id])
-   @promocion_complejo = @complejo.promotions
+   @promotions = Promotion.all
+   #@promotion = Promotion.find(params[:id])
+ #  @promocion_complejo = @complejo.promotions
   end
 
 end

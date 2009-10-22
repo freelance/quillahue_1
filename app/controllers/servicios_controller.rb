@@ -4,7 +4,7 @@ class ServiciosController < ApplicationController
   # GET /servicios.xml
   def index
     @servicios = Servicio.all
-
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @servicios }
@@ -14,7 +14,7 @@ class ServiciosController < ApplicationController
   # GET /servicios/1
   # GET /servicios/1.xml
   def show
-    @servicios = Servicios.find(params[:id])
+    @servicios = Servicio.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -41,7 +41,8 @@ class ServiciosController < ApplicationController
   # POST /servicios
   # POST /servicios.xml
   def create
-    @servicios = Servicios.new(params[:servicios])
+    @servicios = Servicio.new(params[:servicios])
+    
 
     respond_to do |format|
       if @servicios.save
@@ -75,7 +76,7 @@ class ServiciosController < ApplicationController
   # DELETE /servicios/1
   # DELETE /servicios/1.xml
   def destroy
-    @servicios = Servicios.find(params[:id])
+    @servicios = Servicio.find(params[:id])
     @servicios.destroy
 
     respond_to do |format|

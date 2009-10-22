@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :contactos
+
   map.resources :promotions
 
   map.resources :ubicacions
@@ -11,7 +13,9 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :cabanas , :member =>{:cipres => :post}
   map.resources :complejos
 
- map.root :controller => 'home'
+map.root :controller => 'home'
+
+
  #map.cipres "Cipres", :controller => "servicios", :action => "cipres"
  map.coihe "Coihue", :controller => "cabanas", :action => "coihue"
  map.lenga "Lenga", :controller => "cabanas", :action => "lenga"

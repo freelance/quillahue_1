@@ -2,27 +2,26 @@
 	
 <div id="centro">
 	<div id ="col1">
-	<h2>Promociones </h2>
-	<div class="centrar-imagen">  <img src="/images/banner1.jpg"></div>
+
    	  	
-	    <h2>Informacion</h2>
+	    <h2>Promociones </h2>
     
-  <% if !@promotions.blank? %>
-  <% for promotion in @promotions %>
-  <%= promotions.nombre %>
-  <% end %>
-  <% else %>
-  No informations.
+ 
+   
+  <% if !@promotions.blank?   %>     
+    <% for promotion in @promotions %>
+  	 	<%= promotion.nombre %>	
+        <%#= image_tag promotion.photo.url %>
+   		<%= image_tag promotion.photo.url(:thumb) %>
+     <% end %>
+  No hay promociones.
   <% end %>
 
-
-	
 	</div>
 
 <p style="color: green"><%= flash[:notice] %></p>
 <h2>Bienvenidos a Quillahue</h2>
-
-   <div class="centrar-imagen">  <img src="/images/home.jpg"></div>
+<div class="centrar-imagen">  <img src="/images/home.jpg"></div>
 
 <h3>En Bariloche..Patagonia Argentina, cabañas de 2 a 7 personas, ubicadas a 100mts.del Lago Nahuel Huapi, en el km4 de la hermosa ruta al Llao Llao, a 3 minutos del Centro Cívico y a 10 del Cerro Catedral.
 Toda la calidez de un “Lugar de Amigos” para descansar y disfrutar en familia de la maravillosa naturaleza que nos rodea.
@@ -39,12 +38,14 @@ San Carlos de Bariloche – Pcia. De Río Negro – Patagonia Argentina </h3>
   <% if !@ubicacions.blank? %>
   <% for ubicacion in @ubicacions %>
   <%= ubicacion.direccion %>
+    <%= ubicacion.cel %>
   <% end %>
   <% else %>
   No informations.
   <% end %>
 <h1>Clima Actual</h1>
-  
+<div class="centrar-imagen">  <img src="/images/icons/61x61/0.png"></div>
+  Esta muy frio !!! :S
 </div>
 
 
@@ -54,3 +55,4 @@ San Carlos de Bariloche – Pcia. De Río Negro – Patagonia Argentina </h3>
 
 
 
+	

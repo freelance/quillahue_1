@@ -1,6 +1,8 @@
 <h1>Editing promotion</h1>
 
-<% form_for(@promotion) do |f| %>
+
+  <% form_for(@promotion, :html => { :multipart => true }) do |f| %>
+  
   <%= f.error_messages %>
 
   <p>
@@ -23,6 +25,12 @@
     <%= f.label :descripcion %><br />
     <%= f.text_area :descripcion %>
   </p>
+  
+    <p>
+  <%= f.label 'Imagen' %><br />
+  <%= f.file_field :photo %>
+</p>
+
   <p>
     <%= f.submit 'Update' %>
   </p>

@@ -1,9 +1,8 @@
 class ContactosController < ApplicationController
-
   # GET /contactos
   # GET /contactos.xml
   def index
-    @contactos = Contacto.all
+    @contactos = Contactos.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -14,43 +13,43 @@ class ContactosController < ApplicationController
   # GET /contactos/1
   # GET /contactos/1.xml
   def show
-    @contacto = Contacto.find(params[:id])
+    @contactos = Contactos.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
-      format.xml  { render :xml => @contacto }
+      format.xml  { render :xml => @contactos }
     end
   end
 
   # GET /contactos/new
   # GET /contactos/new.xml
   def new
-    @contacto = Contacto.new
+    @contactos = Contactos.new
 
     respond_to do |format|
       format.html # new.html.erb
-      format.xml  { render :xml => @contacto }
+      format.xml  { render :xml => @contactos }
     end
   end
 
   # GET /contactos/1/edit
   def edit
-    @contacto = Contacto.find(params[:id])
+    @contactos = Contactos.find(params[:id])
   end
 
   # POST /contactos
   # POST /contactos.xml
   def create
-    @contacto = Contacto.new(params[:contacto])
+    @contactos = Contactos.new(params[:contactos])
 
     respond_to do |format|
-      if @contacto.save
-        flash[:notice] = 'Contacto was successfully created.'
-        format.html { redirect_to(@contacto) }
-        format.xml  { render :xml => @contacto, :status => :created, :location => @contacto }
+      if @contactos.save
+        flash[:notice] = 'Contactos was successfully created.'
+        format.html { redirect_to(@contactos) }
+        format.xml  { render :xml => @contactos, :status => :created, :location => @contactos }
       else
         format.html { render :action => "new" }
-        format.xml  { render :xml => @contacto.errors, :status => :unprocessable_entity }
+        format.xml  { render :xml => @contactos.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -58,16 +57,16 @@ class ContactosController < ApplicationController
   # PUT /contactos/1
   # PUT /contactos/1.xml
   def update
-    @contacto = Contacto.find(params[:id])
+    @contactos = Contactos.find(params[:id])
 
     respond_to do |format|
-      if @contacto.update_attributes(params[:contacto])
-        flash[:notice] = 'Contacto was successfully updated.'
-        format.html { redirect_to(@contacto) }
+      if @contactos.update_attributes(params[:contactos])
+        flash[:notice] = 'Contactos was successfully updated.'
+        format.html { redirect_to(@contactos) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
-        format.xml  { render :xml => @contacto.errors, :status => :unprocessable_entity }
+        format.xml  { render :xml => @contactos.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -75,8 +74,8 @@ class ContactosController < ApplicationController
   # DELETE /contactos/1
   # DELETE /contactos/1.xml
   def destroy
-    @contacto = Contacto.find(params[:id])
-    @contacto.destroy
+    @contactos = Contactos.find(params[:id])
+    @contactos.destroy
 
     respond_to do |format|
       format.html { redirect_to(contactos_url) }

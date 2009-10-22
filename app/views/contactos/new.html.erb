@@ -1,39 +1,31 @@
-<h1>New contacto</h1>
+<h1>New contactos</h1>
 
-<% form_for(@contacto) do |f| %>
+<% form_for(@contactos) do |f| %>
   <%= f.error_messages %>
 
+  <p>
+    <%= f.label :apellido %><br />
+    <%= f.text_field :apellido %>
+  </p>
   <p>
     <%= f.label :nombre %><br />
     <%= f.text_field :nombre %>
   </p>
   <p>
-    <%= f.label :ciudad %><br />
-    <%= f.text_field :ciudad %>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
   </p>
   <p>
-    <%= f.label :pais %><br />
-    <%= f.text_field :pais %>
-  </p>
-  <p>
-    <%= f.label :cant_per %><br />
-    <%= f.text_field :cant_per %>
-  </p>
-  <p>
-    <%= f.label :f_in %><br />
-    <%= f.datetime_select :f_in %>
-  </p>
-  <p>
-    <%= f.label :f_eg %><br />
-    <%= f.datetime_select :f_eg %>
+    <%= f.label :consulta %><br />
+    <%= f.text_area :consulta %>
   </p>
   <p>
     <%= f.label :tel %><br />
     <%= f.text_field :tel %>
   </p>
   <p>
-    <%= f.label :consulta %><br />
-    <%= f.text_area :consulta %>
+    <%= f.label :cabaña %><br />
+    <%= f.text_field :cabaña %>
   </p>
   <p>
     <%= f.submit 'Create' %>

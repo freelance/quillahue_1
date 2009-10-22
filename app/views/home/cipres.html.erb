@@ -2,20 +2,55 @@
 <%= render :partial => 'menu_servicos' %>
 
 Cipres
-<!-- wrapper element for the large image --> 
-<div id="image_wrap"> 
+<ul class="gallery">
+<li><a href="/images/01.gif" title="A caption"><img src="/images/01.gif" alt="Image01"></a></li>
+</ul>
+
+
+<ul class="gallery_demo_unstyled">
+    <li><img src="img/flowing-rock.jpg" alt="Flowing Rock" title="Flowing Rock Caption"></li>
+
+    <li><img src="img/stones.jpg" alt="Stones" title="Stones - from Aple images"></li>
+    <li><img src="img/grass-blades.jpg" alt="Grass Blades" title="Apple nature desktop images"></li>
+    <li><img class="noscale" src="img/ladybug.jpg" alt="Ladybug" title="Ut rutrum, lectus eu pulvinar elementum, lacus urna vestibulum ipsum"></li>
+    <li><img src="img/lightning.jpg" alt="Lightning" title="Black &amp; White"></li>
+    <li><img src="img/lotus.jpg" alt="Lotus" title="Fusce quam mi, sagittis nec, adipiscing at, sodales quis"></li>
+    <li><img src="img/mojave.jpg" alt="Mojave" title="Suspendisse volutpat posuere dui. Suspendisse sit amet lorem et risus faucibus pellentesque."></li>
+    <li><img src="img/pier.jpg" alt="Pier" title="Proin erat nisi"></li>
+    <li><img src="img/sea-mist.jpg" alt="Sea Mist" title="Caption text from title"></li>
+</ul>
+
+<p class="nav"><a href="#" onclick="$.galleria.prev(); return false;">previous</a> | <a href="#" onclick="$.galleria.next(); return false;">next</a></p>
+
+
+
+
+
+
+
+
+<% unless @fotos.blank? %>
+<ul class="gallery">
+<% for foto in @fotos %>
+<li><%= image_tag foto.campoenlobd.url %></li>
+<% end %>
+</ul>
+<% else %>
+Sem fotos.
+<% end %>
+
+<% if !@cabanas.blank?  %>
+    <% for cabana in @cabanas %>
+  	 	<%= cabana.nombre %>	
+  	 	<%= cabana.descripcion %>	
+        <%#= image_tag promotion.photo.url %>
+   		<%#= image_tag promotion.photo.url(:thumb) %>
+     <% end %>
  
-    <!-- Initially the image is a simple 1x1 pixel transparent GIF --> 
-    <img src="http://static.flowplayer.org/tools/img/blank.gif" width="500" height="375" /> 
- 
-</div>
-
-
-
+  No hay cabañas en este complejo.
+  <% end %>
 
 <div class="centrar-imagen"> <img src="/images/mpa.jpg"></div>
-
-
 
 </div>
 

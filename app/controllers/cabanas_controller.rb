@@ -25,34 +25,50 @@ class CabanasController < ApplicationController
   # GET /cabanas/new.xml
   def new
     @cabana = Cabana.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @cabana }
-    end
+     combo_select
+    
   end
 
   # GET /cabanas/1/edit
   def edit
     @cabana = Cabana.find(params[:id])
+    combo_select
   end
 
   # POST /cabanas
   # POST /cabanas.xml
+  
+  
+  
   def create
-    @cabana = Cabana.new(params[:cabana])
+    # Aqui ustedes pude pegar los dados y hacer:
+    # @user = current_user.property.build(params[:property])
+    # if @user.save
+    #   flash[:notice] = 'Property was successfully created.'
+    #   redirect_to(@user.property)
+    # else
+    #   render :action => "new"
+    # end
 
-    respond_to do |format|
-      if @cabana.save
-        flash[:notice] = 'Cabana was successfully created.'
-        format.html { redirect_to(@cabana) }
-        format.xml  { render :xml => @cabana, :status => :created, :location => @cabana }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @cabana.errors, :status => :unprocessable_entity }
-      end
+    # mas yo prefiro asi:
+    @cabana = Cabana.new(params[:cabana])
+    # necessita estar logado com un user
+    # @property.user_id = current_user.id
+
+    if @cabana.save
+      flash[:notice] = 'Property was successfully created.'
+      redirect_to(@cabana)
+    else
+      combo_select
+      render :action => "new"
     end
   end
+  
+ 
+  
+  
+  
+
 
   # PUT /cabanas/1
   # PUT /cabanas/1.xml
@@ -84,5 +100,17 @@ class CabanasController < ApplicationController
   end
   
   
+    private
+    
+    def cabanas_fotos
+    @cabana = Cabana.find(params[:id])
+    respond_to do |wants|
+      wants.json { { :exists => @cabana.present? }.to_json }
+    end
+  end
+  
+   def combo_select
+    @servicios = Servicio.combobox
+  end
   
 end

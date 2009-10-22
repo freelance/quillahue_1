@@ -1,0 +1,30 @@
+<% form_for @cabana do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </p>
+
+  <p>
+    <%#= f.label :categories_id %><br />
+    <%#= f.select :categories_id, @categories %>
+  </p>
+
+  <p>
+    <%#= f.label :title %><br />
+    <%#= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :descripcion %><br />
+    <%= f.text_area :descripcion %>
+  </p>
+  
+  
+  <% f.fields_for  :foto ,  :html => { :multipart => true } do |form| %> 
+ <%= form.file_field :foto %>
+<% end %>
+  <p>
+    <%= f.submit @cabana.new_record? ? 'Create' : 'Update' %>
+  </p>
+<% end %>
